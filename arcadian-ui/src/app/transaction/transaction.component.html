@@ -1,0 +1,30 @@
+<h1 class="display-4">Dashboard</h1>
+<p class="lead">Arcadian Transaction List</p>
+<hr class="my-4">
+<p class="lead">
+  <a class="btn btn-primary btn-lg" href="#" role="button" routerLink="/create">Create</a>
+</p>
+<div class="row">  
+    <table class="table table-striped">  
+        <thead>
+            <tr>  
+                <th scope="col">Id</th>  
+                <th scope="col">Description</th>  
+                <th scope="col">Date</th>  
+                <th align="right" scope="col">Cost</th>  
+              </tr>  
+        </thead>
+      <tbody>
+       
+        
+          <tr *ngFor="let d of data">  
+            <td scope="row">{{d.transactionId}}</td>  
+            <td>{{d.transactionName}}</td>  
+             
+            <td>{{d.date |  date: 'shortDate'}}</td>  
+            <td align="right">{{d.cost | number }}</td>  
+            <td><button type="button" class="btn btn-light" routerLink="/transactiondetail/{{d.transactionId}}">View Details</button></td>  
+          </tr>  
+      </tbody>
+    </table>  
+</div> 

@@ -1,0 +1,36 @@
+ <h1 class="display-4">Transaction Detail</h1>
+ <hr class="my-4">
+ <p class="lead">
+   <a class="btn btn-primary btn-lg" href="#" role="button" routerLink="/transactions">Go Back</a>
+ </p>
+ <div class="row">  
+     <div *ngIf="transaction">
+         <form>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">ID</label>
+              <div class="col-sm-10">
+                <label>{{transaction.transactionId}}</label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label  class="col-sm-2 col-form-label">Description</label>
+              <div class="col-sm-10">
+                <label>{{transaction.transactionName}}</label>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                  <label>{{transaction.date | date: 'short'}}</label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label  class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                  <label>{{transaction.cost | number}}</label>
+                </div>
+              </div>
+          </form>
+     </div>
+ </div> 
+ 

@@ -1,0 +1,53 @@
+<h1 class="display-4">New Transaction</h1>
+<hr class="my-4">
+<p class="lead">
+<br>
+<div class="row">  
+  <div class="container">
+    
+    <form [formGroup]="TransactionForm" (submit)="onSubmit(TransactionForm.value)">  
+        
+      <table class="table">  
+        <tr>  
+          <td>Description</td>  
+          <td>  
+            <input type="hidden" formControlName="transactionId">  
+            <input type="text" formControlName="transactionName" class="form-control">  
+            <div *ngIf="submitted && TransactionForm.controls['transactionName'].errors" class="text-danger">  
+              <div *ngIf="TransactionForm.controls['transactionName'].errors['required']">Description is required</div>  
+            </div>   
+          </td>  
+        </tr>  
+        
+        <tr>  
+          <td>Date</td>  
+          <td>
+            <input type="text" formControlName="date" class="form-control">  
+            <div *ngIf="submitted && TransactionForm.controls['date'].errors" class="text-danger">  
+              <div *ngIf="TransactionForm.controls['date'].errors['required']">Date is required</div>  
+            </div>   
+          </td>  
+        </tr>
+  
+  
+        <tr>  
+          <td>Cost</td>  
+          <td>  
+            <input type="text" formControlName="cost" class="form-control">  
+            <div *ngIf="submitted && TransactionForm.controls['cost'].errors" class="text-danger">  
+              <div *ngIf="TransactionForm.controls['cost'].errors['required']">Cost is required</div>  
+            </div>  
+          </td>  
+        </tr>  
+  
+        <tr>  
+          <td></td>
+          <td>  
+            
+          </td>  
+        </tr>  
+      </table>
+      <button type="submit" class="btn btn-primary btn-l">Submit</button> 
+    </form>  
+  </div>
+</div> 
