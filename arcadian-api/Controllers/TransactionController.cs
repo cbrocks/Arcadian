@@ -37,32 +37,6 @@ namespace ArcadianApi.Controllers
             return data;
         }
 
-        //[HttpPost("create")]
-        //public async Task Create([FromBody] JObject inputValue)
-        //{
-        //    string inputstr = inputValue == null ? "" : inputValue.ToString();
-        //    dynamic trx = Newtonsoft.Json.JsonConvert.DeserializeObject<Model.Transaction>(inputstr);
-
-        //    var transaction = new Transaction
-        //    {
-
-        //    };
-        //    ArcadianDbContext.Transactions.Add(trx);
-        //    await ArcadianDbContext.SaveChangesAsync();
-        //    return CreatedAtAction(null,  new { id = transaction.TransactionId }, transaction);
-        //}
-
-        //[HttpPost("create")]
-        //public IActionResult Create([FromBody] JObject obj)
-        //{
-        //    //var data = ArcadianDbContext.Transactions.Add(obj);
-        //    //ArcadianDbContext.SaveChanges();
-        //    string inputstr = obj == null ? "" : obj.ToString();
-        //    dynamic trx = Newtonsoft.Json.JsonConvert.DeserializeObject<Model.Transaction>(inputstr);
-
-        //    return Ok(trx);
-        //}
-
         [HttpPost("create")]
         public IActionResult Create([FromBody] TransactionFormParam obj)
         {

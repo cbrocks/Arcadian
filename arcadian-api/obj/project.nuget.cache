@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NSbmO4ymEbssW9HCgTxCe9Fm51+pZj1/5jt2yXU0VGrbcQMt+U3F6Y41Hd4tNcVgpNiEHy5TLK9WczPkhSpoUA==",
+  "dgSpecHash": "zX/FjBBZQRmm3bz9xUcpxDOucMHE8inXMbrfgEal27dSu+860+YM4WoxP3GsxNcwjDhl8zUjaE5hrDs5Xv00tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chris\\source\\repos\\Arcadian\\arcadian-api\\ArcadianApi.csproj",
+  "projectFilePath": "C:\\DEV\\Arcadian\\arcadian-api\\ArcadianApi.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Chris\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

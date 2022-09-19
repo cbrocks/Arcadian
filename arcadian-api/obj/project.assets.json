@@ -5677,11 +5677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chris\\source\\repos\\Arcadian\\arcadian-api\\ArcadianApi.csproj",
+      "projectUniqueName": "C:\\DEV\\Arcadian\\arcadian-api\\ArcadianApi.csproj",
       "projectName": "ArcadianApi",
-      "projectPath": "C:\\Users\\Chris\\source\\repos\\Arcadian\\arcadian-api\\ArcadianApi.csproj",
+      "projectPath": "C:\\DEV\\Arcadian\\arcadian-api\\ArcadianApi.csproj",
       "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chris\\source\\repos\\Arcadian\\arcadian-api\\obj\\",
+      "outputPath": "C:\\DEV\\Arcadian\\arcadian-api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
